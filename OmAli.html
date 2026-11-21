@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Ali - SPRINKLY</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+                <span class="heart">♡</span>
+                <span>Sprinkly</span>
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">HOME</a>
+            <a href="RecipesMenu.html">RECIPES</a>
+            <a href="AboutUs.html">ABOUT US</a>
+            <a href="ContactUs.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="home">
+            <h1>OM ALI</h1>
+
+            <img
+                class="cookie-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSlayKzyY2l4Pmo6gmsgF07nqAlXySrgOxpA1AsPXzog&s=10"
+                alt="Traditional Om Ali dessert">
+        </section>
+
+        <section class="right-section" id="recipes">
+
+            <div class="info">
+                <h2>ABOUT</h2>
+                <p>
+                    Om Ali is a traditional, creamy pudding dessert made with
+                    baked puff pastry, sweetened milk, and a delicious topping
+                    of roasted nuts. It is served warm and finished with a
+                    golden layer of whipped cream.
+                </p>
+            </div>
+
+            <div class="info">
+                <h2>EXTRA INFO</h2>
+                <div class="extra-info">
+                    <span>Pudding</span>
+                    <span>Oven: 250°C</span>
+                    <span>Easy</span>
+                </div>
+            </div>
+
+            <div class="ingredients">
+                <h2>INGREDIENTS</h2>
+
+                <table>
+    <tr>
+        <th>NAME</th>
+        <th>UNIT</th>
+    </tr>
+    <tr>
+        <td>Baked puff pastry</td>
+        <td>8 cups (broken pieces)</td>
+    </tr>
+    <tr>
+        <td>Milk</td>
+        <td>1 tin</td>
+    </tr>
+    <tr>
+        <td>Sugar</td>
+        <td>1 cup</td>
+    </tr>
+    <tr>
+        <td>Pistachios</td>
+        <td>3/4 cup</td>
+    </tr>
+    <tr>
+        <td>Hazelnuts (roasted and crushed)</td>
+        <td>3/4 cup</td>
+    </tr>
+    <tr>
+        <td>Sliced almonds (roasted)</td>
+        <td>1 cup</td>
+    </tr>
+</table>
+            </div>
+
+            <div class="instructions">
+                <h2>PRE-PREPARATION</h2>
+                <ol>
+                    <li>Preheat the oven to 250°C.</li>
+                    <li>Smash the puff pastry and place it in a hot dish.</li>
+                </ol>
+
+                <h2>PREPARATION</h2>
+                <ol>
+                    <li>Mix the milk and sugar in a pot. Boil it, then pour it over the puff pastry.</li>
+                    <li>Sprinkle the nuts on top.</li>
+                    <li>Cover the top with whipped cream.</li>
+                    <li>Bake for around 3–5 minutes, until it is lightly golden brown.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

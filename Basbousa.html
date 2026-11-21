@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basbousa - SPRINKLY</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+                <span class="heart">♡</span>
+                <span>Sprinkly</span>
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html" class="active">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Left side -->
+        <section id="home">
+
+            <h1>BASBOUSA</h1>
+
+            <img
+                class="cookie-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDDdQarNoVC5SIza-8gj4s7piq8igMvsHelPTnFC4d5wJ714toW-dUxse3MxccBpVJvwd5aeCyZ35S_ykzdKGl-IbQmK_LhiBLObmwfC5&s=10"
+                alt="Delicious golden Basbousa dessert">
+
+        </section>
+
+        <!-- Right side -->
+        <section class="right-section" id="recipes">
+
+            <div class="info">
+                <h2>ABOUT</h2>
+
+                <p>
+                    Tender, golden semolina cake infused with fragrant
+                    coconut and soaked in sweet syrup for a rich,
+                    melt-in-your-mouth texture. A classic Middle Eastern
+                    favorite that comes together easily for any gathering.
+                </p>
+            </div>
+
+            <div class="info">
+
+                <h2>EXTRA INFO</h2>
+
+                <div class="extra-info">
+                    <span>◷ 15 min prep</span>
+                    <span>Easy</span>
+                    <span>Serves: 12</span>
+                </div>
+
+            </div>
+
+            <div class="ingredients">
+
+                <h2>INGREDIENTS</h2>
+
+                <table>
+
+                    <tr>
+                        <th>NAME</th>
+                        <th>UNIT</th>
+                    </tr>
+
+                    <tr>
+                        <td>Medium Semolina</td>
+                        <td>2 cups</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shredded Coconut</td>
+                        <td>1/2 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Granulated Sugar</td>
+                        <td>3/4 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Plain Yogurt</td>
+                        <td>3/4 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Melted Butter</td>
+                        <td>1/2 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Baking Powder</td>
+                        <td>1 1/2 tsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vanilla Extract</td>
+                        <td>1 tsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Simple Syrup (Sugar Syrup)</td>
+                        <td>1 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sliced Almonds (optional garnish)</td>
+                        <td>1/4 cup</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="instructions">
+
+                <h2>INSTRUCTIONS</h2>
+
+                <ol>
+                    <li>Preheat the oven to 180°C and grease a baking pan.</li>
+                    <li>In a bowl, mix semolina, shredded coconut, sugar, and baking powder.</li>
+                    <li>Add yogurt, melted butter, and vanilla extract, then stir gently until just combined.</li>
+                    <li>Spread the batter evenly into the pan and top with sliced almonds if desired.</li>
+                    <li>Bake for 30–35 minutes until the top and edges turn golden brown.</li>
+                    <li>Pour sweet syrup evenly over the hot basbousa as soon as it leaves the oven.</li>
+                    <li>Let cool completely before cutting into squares and serving.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

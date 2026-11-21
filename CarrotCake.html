@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moist Carrot Cake - SPRINKLY</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+                <span class="heart">♡</span>
+                <span>Sprinkly</span>
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">HOME</a>
+            <a href="RecipesMenu.html">RECIPES</a>
+            <a href="AboutUs.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="home">
+            <h1>MOIST<br>CARROT CAKE</h1>
+
+            <img
+                class="cookie-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_oB2a3pB2PHWObTq8Y1wwHs-wVnk7ZljNI0WSmIAPVWfiXuaWCLg_pZph&s=10"
+                alt="Moist carrot cake">
+        </section>
+
+        <section class="right-section" id="recipes">
+
+            <div class="info">
+                <h2>ABOUT</h2>
+                <p>
+                    A moist and flavorful carrot cake made with freshly grated
+                    carrots, warm cinnamon, pecans, and raisins or cranberries.
+                    Olive oil and vegetable oil help give this cake its soft,
+                    tender texture.
+                </p>
+            </div>
+
+            <div class="info">
+                <h2>EXTRA INFO</h2>
+                <div class="extra-info">
+                    <span>Cake</span>
+                    <span>160°C</span>
+                    <span>25–30 min bake</span>
+                </div>
+            </div>
+
+           <div class="ingredients">
+                <h2>INGREDIENTS</h2>
+
+                <table>
+                    <tr>
+                        <th>NAME</th>
+                        <th>UNIT</th>
+                    </tr>
+                    <tr>
+                        <td>Olive Oil</td>
+                        <td>80 g</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetable Oil</td>
+                        <td>80 g</td>
+                    </tr>
+                    <tr>
+                        <td>Granulated Sugar</td>
+                        <td>150 g</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Sugar</td>
+                        <td>50 g</td>
+                    </tr>
+                    <tr>
+                        <td>Whole Eggs</td>
+                        <td>150 g</td>
+                    </tr>
+                    <tr>
+                        <td>Flour</td>
+                        <td>140 g</td>
+                    </tr>
+                    <tr>
+                        <td>Baking Powder</td>
+                        <td>5 g</td>
+                    </tr>
+                    <tr>
+                        <td>Baking Soda</td>
+                        <td>3 g</td>
+                    </tr>
+                    <tr>
+                        <td>Cinnamon</td>
+                        <td>6 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carrots</td>
+                        <td>150 g</td>
+                    </tr>
+                    <tr>
+                        <td>Pecan</td>
+                        <td>50 g</td>
+                    </tr>
+                    <tr>
+                        <td>Raisins / Cranberries</td>
+                        <td>40 g</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="instructions">
+                <h2>PRE-PREPARATION</h2>
+                <ol>
+                    <li>Preheat the oven to 160°C.</li>
+                    <li>Line the cake molds or tins.</li>
+                    <li>Sift the flour with all the dry ingredients.</li>
+                </ol>
+
+                <h2>PREPARATION</h2>
+                <ol>
+                    <li>Mix both oils with both sugars and eggs.</li>
+                    <li>In a food processor, grind the pecans and raisins with half the amount of dry ingredients.</li>
+                    <li>Add the dry ingredients to the wet ingredients and mix.</li>
+                    <li>Finely chop the carrots in a food processor and fold them in last to the cake batter.</li>
+                    <li>Fill the pre-prepared cake molds and bake for 25–30 minutes.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

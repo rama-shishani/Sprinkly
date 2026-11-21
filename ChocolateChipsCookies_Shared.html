@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Chip Cookies - SPRINKLY</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+ <span class="heart">♡</span>
+                <span>Sprinkly</span>
+               
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html" class="active">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Left side -->
+        <section id="home">
+
+            <h1>CHOCOLATE CHIP<br>COOKIES</h1>
+
+            <img
+                class="cookie-image"
+                src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=900"
+                alt="Delicious chocolate chip cookies">
+
+        </section>
+
+        <!-- Right side -->
+        <section class="right-section" id="recipes">
+
+            <div class="info">
+                <h2>ABOUT</h2>
+
+                <p>
+                    Crispy on the outside, soft and chewy
+                    on the inside! These homemade chocolate
+                    chip cookies are filled with delicious
+                    chocolate chips. The perfect sweet treat
+                    for every occasion.
+                </p>
+            </div>
+
+            <div class="info">
+
+                <h2>EXTRA INFO</h2>
+
+                <div class="extra-info">
+                    <span>◷ 25 min prep</span>
+                    <span>Easy</span>
+                    <span>Serves: 12</span>
+                </div>
+
+            </div>
+
+            <div class="ingredients">
+
+                <h2>INGREDIENTS</h2>
+
+                <table>
+
+                    <tr>
+                        <th>NAME</th>
+                        <th>UNIT</th>
+                    </tr>
+
+                    <tr>
+                        <td>All Purpose Flour</td>
+                        <td>2 cups</td>
+                    </tr>
+
+                    <tr>
+                        <td>Butter</td>
+                        <td>1 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Brown Sugar</td>
+                        <td>3/4 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>White Sugar</td>
+                        <td>1/2 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Eggs</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vanilla Extract</td>
+                        <td>1 tsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Baking Soda</td>
+                        <td>1 tsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chocolate Chips</td>
+                        <td>1 cup</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="instructions">
+
+                <h2>INSTRUCTIONS</h2>
+
+                <ol>
+                    <li>Preheat the oven to 180°C.</li>
+                    <li>Mix butter and both sugars.</li>
+                    <li>Add eggs and vanilla extract.</li>
+                    <li>Add flour and baking soda.</li>
+                    <li>Fold in the chocolate chips.</li>
+                    <li>Bake for 10-12 minutes until golden.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

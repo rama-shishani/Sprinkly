@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake - SPRINKLY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+                <span class="heart">♡</span>
+                <span>Sprinkly</span>
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html" class="active">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h1>CHOCOLATE<br>CAKE</h1>
+            <img
+                class="cookie-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufFUgjBaqy-MBPG97-__KmE7tkw9Vrnpd5-_oUVq1Qg&s=10"
+                alt="Homemade chocolate cake">
+        </section>
+
+        <section class="right-section" id="recipes">
+            <div class="info" id="about">
+                <h2>ABOUT</h2>
+                <p>
+                    A rich and soft homemade chocolate cake with a deep cocoa
+                    flavor. Hot coffee (or hot water mixed with instant coffee)
+                    brings out the chocolate taste and keeps the cake moist.
+                    A delicious treat for every chocolate lover!
+                </p>
+            </div>
+
+            <div class="info">
+                <h2>EXTRA INFO</h2>
+                <div class="extra-info">
+                    <span>160°C</span>
+                    <span>45 min bake</span>
+                    <span>No fan</span>
+                </div>
+            </div>
+
+            <div class="ingredients">
+                <h2>INGREDIENTS</h2>
+                <table>
+                    <tr>
+                        <th>NAME</th>
+                        <th>UNIT</th>
+                    </tr>
+                    <tr>
+                        <td>All Purpose Flour (sifted)</td>
+                        <td>2 cups</td>
+                    </tr>
+                    <tr>
+                        <td>White Sugar</td>
+                        <td>1 1/2 cups</td>
+                    </tr>
+                    <tr>
+                        <td>Baking Powder</td>
+                        <td>1 tbsp</td>
+                    </tr>
+                    <tr>
+                        <td>Baking Soda</td>
+                        <td>1/2 tsp</td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>A pinch</td>
+                    </tr>
+                    <tr>
+                        <td>Cocoa Powder</td>
+                        <td>1/2 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Oil</td>
+                        <td>1/2 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Vanilla Extract</td>
+                        <td>As needed</td>
+                    </tr>
+                    <tr>
+                        <td>Full-Fat Milk</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Coffee OR Hot Water with Instant Coffee</td>
+                        <td>1 cup</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="instructions">
+                <h2>INSTRUCTIONS</h2>
+                <ol>
+                    <li>Preheat the oven to 160°C. Use the lower heat setting without the fan.</li>
+                    <li>Sift the flour and cocoa powder into a bowl.</li>
+                    <li>Add the sugar, baking powder, baking soda, and a pinch of salt. Mix the dry ingredients.</li>
+                    <li>In another bowl, mix the oil, eggs, vanilla extract, and milk.</li>
+                    <li>Add the wet ingredients to the dry ingredients and mix until combined.</li>
+                    <li>Slowly add 1 cup of hot coffee, or hot water with instant coffee dissolved in it, and mix carefully.</li>
+                    <li>Pour the batter into a prepared cake pan.</li>
+                    <li>Bake for about 45 minutes. Baking time may vary depending on the oven.</li>
+                    <li>Let the cake cool before serving.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

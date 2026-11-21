@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweetify - About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf7;
+    color: #58352f;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+/* Navigation */
+
+header {
+    background: #fffaf5;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #713f38;
+}
+
+.logo span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #563c36;
+    font-size: 13px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #f5d8d5;
+    padding: 9px 15px;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    background: #f9e9e5;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 45px 5%;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #633a32;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 14px;
+    max-width: 350px;
+    line-height: 1.7;
+}
+
+.hero-image {
+    width: 50%;
+    height: 330px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Story Section */
+
+.story {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 45px 0;
+}
+
+.story-image,
+.story-content {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    color: #633a32;
+    margin-bottom: 12px;
+}
+
+.story-content p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Mission and Vision */
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0 35px;
+}
+
+.info-card {
+    background: #f9e2df;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.info-card:nth-child(2) {
+    background: #f8ebe5;
+}
+
+.info-icon {
+    font-size: 32px;
+    color: #c87c78;
+}
+
+.info-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Values */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.value-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #f8dfdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #bb7772;
+}
+
+.value h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.value p {
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* Team */
+
+.team {
+    padding: 10px 0 50px;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.member {
+    background: #fff7f3;
+    border: 1px solid #f4e8e2;
+    border-radius: 15px;
+    padding: 20px 12px;
+    text-align: center;
+}
+
+.member img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    background: #f6ded9;
+}
+
+.member h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.role {
+    display: inline-block;
+    background: #f4d7d3;
+    color: #884f48;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding: 35px 25px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        height: 230px;
+    }
+
+    .story {
+        flex-direction: column;
+    }
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .team-members {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .member {
+        padding: 15px 8px;
+    }
+
+    .values {
+        gap: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        ♡ Sweetify
+        <span>— Dessert Recipes —</span>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Resources</a>
+        <a href="#">Tools</a>
+        <a href="#" class="active">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>About Us ♡</h1>
+        <p>
+            Get to know Sweetify, our story, mission,
+            values, and the team behind it.
+        </p>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900"
+             alt="Chocolate cake with strawberries">
+    </div>
+
+</section>
+
+<div class="container">
+
+<!-- Our Story -->
+<section class="story">
+
+    <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1577998474517-7eeeed4e448a?w=800"
+             alt="Baking ingredients and mixing bowl">
+    </div>
+
+    <div class="story-content">
+        <h2>Our Story</h2>
+        <p>
+            Sweetify began with a simple idea — to create
+            a welcoming online space for everyone who loves
+            desserts. As dessert enthusiasts, we wanted to
+            share our favorite recipes, baking tips, and
+            inspiration to make baking easier, more enjoyable,
+            and more successful for everyone, from beginners
+            to experienced bakers.
+        </p>
+    </div>
+
+</section>
+
+<!-- Mission and Vision -->
+<section class="mission-vision">
+
+    <div class="info-card">
+        <div class="info-icon">◎</div>
+        <div>
+            <h3>Our Mission</h3>
+            <p>
+                To provide easy, reliable, and delicious
+                dessert recipes, along with helpful resources
+                and tools, to inspire and support dessert
+                lovers everywhere.
+            </p>
+        </div>
+    </div>
+
+    <div class="info-card">
+        <div class="info-icon">◎</div>
+        <div>
+            <h3>Our Vision</h3>
+            <p>
+                To become a go-to destination for dessert
+                seekers, known for its variety, simplicity,
+                and trusted baking guidance.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Our Values -->
+<section class="values-section">
+
+    <div class="section-title">
+        <h2>Our Values</h2>
+    </div>
+
+    <div class="values">
+
+        <div class="value">
+            <div class="value-icon">♡</div>
+            <h3>Passion</h3>
+            <p>A true love for baking and sweet creations.</p>
+        </div>
+
+        <div class="value">
+            <div class="value-icon">♧</div>
+            <h3>Simplicity</h3>
+            <p>Clear, easy-to-follow recipes for everyone.</p>
+        </div>
+
+        <div class="value">
+            <div class="value-icon">✿</div>
+            <h3>Quality</h3>
+            <p>Trusted and tested recipes with great results.</p>
+        </div>
+
+        <div class="value">
+            <div class="value-icon">♧</div>
+            <h3>Community</h3>
+            <p>Sharing, learning, and celebrating desserts together.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Meet Our Team -->
+<section class="team">
+
+    <div class="section-title">
+        <h2>Meet Our Team</h2>
+        <p> The dessert lovers behind Sweetify </p>
+    </div>
+
+    <div class="team-members">
+
+        <div class="member">
+            <img src="https://i.pravatar.cc/150?img=47" alt="Rama Al-Hamd">
+            <h3>Rama Al-Hamd</h3>
+            <span class="role">Team Leader</span>
+            <p>Project planning, design coordination, and overall supervision.</p>
+        </div>
+
+        <div class="member">
+            <img src="https://i.pravatar.cc/150?img=44" alt="Lina Qasem">
+            <h3>Lina Qasem</h3>
+            <span class="role">Content Creator</span>
+            <p>Writing recipes, baking tips, and organizing resources.</p>
+        </div>
+
+        <div class="member">
+            <img src="https://i.pravatar.cc/150?img=49" alt="Yara Nasser">
+            <h3>Yara Nasser</h3>
+            <span class="role">Web Developer</span>
+            <p>Building the website pages and implementing features.</p>
+        </div>
+
+        <div class="member">
+            <img src="https://i.pravatar.cc/150?img=45" alt="Noor Salem">
+            <h3>Noor Salem</h3>
+            <span class="role">UI/UX Designer</span>
+            <p>Designing the website look and ensuring a smooth user-friendly experience.</p>
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florentines - SPRINKLY</title>
+
+    <link href="https://www.bbcgoodfood.com/recipes/florentines" rel="stylesheet">
+
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+                <span class="heart">♡</span>
+                <span>Sprinkly</span>
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html" class="active">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Left side -->
+        <section id="home">
+
+            <h1>FLORENTINES</h1>
+
+            <img
+                class="cookie-image"
+                src="floo.jpeg"
+                alt="Crispy oat florentine cookies">
+
+        </section>
+
+        <!-- Right side -->
+        <section class="right-section" id="recipes">
+
+            <div class="info">
+                <h2>ABOUT</h2>
+
+                <p>
+                    Thin, lacy, and irresistibly crisp! These classic oat and honey 
+                    florentines bake to a rich golden brown with caramelized edges 
+                    and a delicate crunch in every bite.
+                </p>
+            </div>
+
+            <div class="info">
+
+                <h2>EXTRA INFO</h2>
+
+                <div class="extra-info">
+                    <span>◷ 10 min prep</span>
+                    <span>Easy</span>
+                    <span>Bake: 6–8 min</span>
+                </div>
+
+            </div>
+
+            <div class="ingredients">
+
+                <h2>INGREDIENTS</h2>
+
+                <table>
+
+                    <tr>
+                        <th>NAME</th>
+                        <th>UNIT</th>
+                    </tr>
+
+                    <tr>
+                        <td>Butter</td>
+                        <td>2/3 cup (151 g)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Oats</td>
+                        <td>2 cups</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sugar</td>
+                        <td>1 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Flour</td>
+                        <td>2/3 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Honey</td>
+                        <td>1/4 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Milk</td>
+                        <td>1/4 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vanilla</td>
+                        <td>1 tsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salt</td>
+                        <td>1/4 tsp</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="instructions">
+
+                <h2>INSTRUCTIONS</h2>
+
+                <ol>
+                    <li>Preheat the oven to 190.6°C.</li>
+                    <li>Melt the butter.</li>
+                    <li>Stir in oats, sugar, flour, honey, milk, vanilla, and salt until well combined.</li>
+                    <li>Spoon teaspoons of the mixture onto aluminium foil and spread each into a thin circle.</li>
+                    <li>Bake for 6–8 minutes at 190.6°C or until golden.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

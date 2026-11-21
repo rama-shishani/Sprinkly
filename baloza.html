@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balouza - SPRINKLY</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="RecipeStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-main">
+                <span class="heart">♡</span>
+                <span>Sprinkly</span>
+            </div>
+            <span class="subtitle">— Dessert Recipes —</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html" class="active">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Left side -->
+        <section id="home">
+
+            <h1>BALOUZA</h1>
+
+            <img
+                class="cookie-image"
+                src="https://www.dailylife.lk/kitchen/marie-biscuit-pudding/images/piece-of-marie-biscuit-pudding.jpg"
+                alt="Balouza dessert">
+
+        </section>
+
+        <!-- Right side -->
+        <section class="right-section" id="recipes">
+
+            <div class="info">
+                <h2>ABOUT</h2>
+
+                <p>
+                    Rich cocoa and Nescafe Balouza cooked on the stove until set,
+                    paired with biscuits dipped in Nescafe for a cozy coffee-flavored
+                    dessert.
+                </p>
+            </div>
+
+            <div class="info">
+
+                <h2>EXTRA INFO</h2>
+
+                <div class="extra-info">
+                    <span>◷ 15 min prep</span>
+                    <span>Easy</span>
+                    <span>Stovetop</span>
+                </div>
+
+            </div>
+
+            <div class="ingredients">
+
+                <h2>INGREDIENTS</h2>
+
+                <table>
+
+                    <tr>
+                        <th>NAME</th>
+                        <th>UNIT</th>
+                    </tr>
+
+                    <tr>
+                        <td>Flour</td>
+                        <td>1 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Powdered Milk</td>
+                        <td>1 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sugar</td>
+                        <td>Slightly less than 1 cup</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cocoa Powder</td>
+                        <td>3 tbsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Nescafe</td>
+                        <td>1 tbsp (+ extra for dipping biscuits)</td>
+                    </tr>
+
+                    <tr>
+                        <td>Butter</td>
+                        <td>1 large tbsp</td>
+                    </tr>
+
+                    <tr>
+                        <td>Water</td>
+                        <td>4 cups</td>
+                    </tr>
+
+                    <tr>
+                        <td>Biscuits</td>
+                        <td>For dipping in Nescafe</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="instructions">
+
+                <h2>INSTRUCTIONS</h2>
+
+                <ol>
+                    <li>Dip the biscuits in Nescafe.</li>
+                    <li>Combine flour, powdered milk, sugar, cocoa powder, 1 tbsp Nescafe, large tbsp of butter, and 4 cups of water.</li>
+                    <li>Cook over the stove, stirring until thickened and set.</li>
+                    <li>Assemble with the Nescafe-dipped biscuits and let set until firm.</li>
+                </ol>
+
+<a href="RecipesMenu.html" class="back-button">← Back</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const navLinks = document.querySelectorAll('#mainNav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

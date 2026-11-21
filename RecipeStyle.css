@@ -1,0 +1,218 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F5E7EB;
+            color: #171313;
+            font-family: Georgia, serif;
+        }
+
+        /* Navigation */
+        header {
+            background: #fffaf5;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #d8c5cb;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: #713f38;
+            letter-spacing: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-main {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pink-heart {
+            color: #e87ea1;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .logo span.subtitle {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 9px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #563c36;
+            font-size: 13px;
+            padding: 9px 15px;
+            border-radius: 20px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #f5d8d5;
+            color: #563c36;
+        }
+
+        /* Main layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 55px;
+            max-width: 1200px;
+            margin: 35px auto;
+            padding: 0 5%;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: normal;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .cookie-image {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        /* Right section */
+        .right-section {
+            padding-top: 10px;
+        }
+
+        .info {
+            margin-bottom: 38px;
+        }
+
+        h2 {
+            font-size: 23px;
+            font-weight: normal;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .extra-info {
+            display: flex;
+            gap: 25px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        .extra-info span {
+            border-left: 1px solid #bca9ae;
+            padding-left: 12px;
+        }
+
+        /* Ingredients */
+        .ingredients table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .ingredients th {
+            text-align: left;
+            padding: 8px 0;
+            border-bottom: 1px solid #bca9ae;
+        }
+
+        .ingredients td {
+            padding: 8px 0;
+        }
+
+        /* Instructions */
+        .instructions {
+            margin-top: 35px;
+            padding-bottom: 30px;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 11px;
+                padding: 7px 12px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin: 25px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .cookie-image {
+                height: 350px;
+            }
+
+        }
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 12px 18px;
+    background-color: #d9a5a5;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #b87979;
+    transform: translateX(-4px);
+}

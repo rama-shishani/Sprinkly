@@ -1,0 +1,439 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFDF9;
+    color: #75464C;
+}
+
+
+/* Navigation Bar - shared style for all website pages */
+
+header {
+    background: #fffaf5;
+    min-height: 78px;
+    padding: 12px 5%;
+    border-top: 8px solid #503238;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    color: #713f38;
+    white-space: nowrap;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    line-height: 1.15;
+    font-weight: bold;
+}
+
+.logo span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 600;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #563c36;
+    font-size: 13px;
+    padding: 9px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+header nav a:hover,
+header nav a.active {
+    background: #f5d8d5;
+}
+
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+    background-color: #F8EAE9;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 560px;
+    height: 420px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #B76E79;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #75464C;
+}
+
+
+/* Search Section */
+
+.search-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.search-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #E8C9B5;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.search-box button {
+    padding: 12px 25px;
+    background-color: #B76E79;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Common Section Styling */
+
+.categories,
+.recipes {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.categories h2,
+.recipes h2,
+.why-us h2,
+.baking-tip h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    margin-bottom: 35px;
+    color: #96777A;
+}
+
+
+/* Categories */
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    padding: 15px;
+}
+
+
+/* Featured Recipes */
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.recipe-info {
+    padding: 20px;
+}
+
+.recipe-info h3 {
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    font-size: 13px;
+    color: #96777A;
+    margin-bottom: 15px;
+}
+
+.recipe-info a {
+    color: #B76E79;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Why Choose Us */
+
+.why-us {
+    padding: 60px 8%;
+    background-color: #F8EAE9;
+    text-align: center;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.feature {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+}
+
+.feature h3 {
+    margin-bottom: 12px;
+}
+
+
+/* Baking Tip */
+
+.baking-tip {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.baking-tip p {
+    margin: 20px auto;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #75464C;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: 11px;
+        padding: 8px 11px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box input {
+        width: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 14px 4%;
+    }
+
+    header nav {
+        gap: 4px;
+    }
+
+    header nav a {
+        padding: 7px 9px;
+    }
+
+    .category-container,
+    .recipe-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image img {
+        height: 320px;
+        max-width: 100%;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
+.view-more-card {
+    background-color: #F5E7EB;
+    border-radius: 12px;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 25px;
+}
+
+.view-more-btn {
+    background-color: #713f38;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-more-btn:hover {
+    background-color: #c97880;
+}

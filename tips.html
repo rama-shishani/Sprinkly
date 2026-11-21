@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Baking Tips - SPRINKLY</title>
+
+    <link rel="stylesheet" href="HomePageCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .tips-hero {
+            background: #F8EAE9;
+            text-align: center;
+            padding: 65px 8%;
+        }
+
+        .tips-hero h1 {
+            font-family: 'Playfair Display', serif;
+            color: #713f38;
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .tips-hero p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: #806b66;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .tips-section {
+            padding: 55px 8% 70px;
+            text-align: center;
+        }
+
+        .tips-section > h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #75464C;
+            margin-bottom: 12px;
+        }
+
+        .tips-intro {
+            color: #96777A;
+            margin-bottom: 35px;
+            font-size: 14px;
+        }
+
+        .tips-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            text-align: left;
+        }
+
+        .tip-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 26px 24px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-top: 4px solid #D9A0A5;
+            transition: transform 0.3s ease;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tip-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #F8EAE9;
+            color: #75464C;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .tip-card h3 {
+            color: #713f38;
+            font-family: 'Playfair Display', serif;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .tip-card p {
+            color: #806b66;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .tip-note {
+            max-width: 850px;
+            margin: 40px auto 0;
+            padding: 25px;
+            background: #F8EAE9;
+            border-radius: 12px;
+            color: #75464C;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .tips-back {
+            display: inline-block;
+            margin-top: 30px;
+            background: #B76E79;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .tips-back:hover {
+            background: #75464C;
+        }
+
+        @media (max-width: 768px) {
+            .tips-hero h1 {
+                font-size: 34px;
+            }
+
+            .tips-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tips-container {
+                grid-template-columns: 1fr;
+            }
+
+            .tips-hero {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-name">♡ Sprinkly</div>
+            <span>— Dessert Recipes —</span>
+        </div>
+
+        <nav>
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="tips-hero">
+        <h1>Useful Baking Tips</h1>
+        <p>
+            A little knowledge makes every dessert even sweeter!
+            Explore simple baking tips to help you get better results
+            in your kitchen.
+        </p>
+    </section>
+
+    <main class="tips-section">
+        <h2>Sweet Tips for Better Baking</h2>
+        <p class="tips-intro">
+            Keep these helpful tips in mind before you start baking.
+        </p>
+
+        <div class="tips-container">
+
+            <article class="tip-card">
+                <span class="tip-number">01</span>
+                <h3>Preheat Your Oven</h3>
+                <p>
+                    Always preheat your oven before baking. This helps your
+                    dessert start cooking at the correct temperature.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">02</span>
+                <h3>Measure Ingredients Carefully</h3>
+                <p>
+                    Use measuring cups and spoons to get the right amounts.
+                    Accurate measurements help your recipes turn out well.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">03</span>
+                <h3>Use Room Temperature Ingredients</h3>
+                <p>
+                    When a recipe asks for room temperature eggs, butter, or
+                    milk, prepare them ahead of time for easier mixing.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">04</span>
+                <h3>Do Not Overmix the Batter</h3>
+                <p>
+                    Mix your ingredients until they are just combined.
+                    Overmixing can make cakes and muffins dense.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">05</span>
+                <h3>Sift Dry Ingredients</h3>
+                <p>
+                    Sifting flour and cocoa powder helps remove lumps and
+                    makes it easier to combine the dry ingredients evenly.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">06</span>
+                <h3>Prepare Your Baking Pan</h3>
+                <p>
+                    Grease your pan or line it with parchment paper when
+                    needed. This makes removing your dessert much easier.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">07</span>
+                <h3>Avoid Opening the Oven Often</h3>
+                <p>
+                    Try not to open the oven door repeatedly while baking.
+                    Sudden temperature changes may affect the result.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">08</span>
+                <h3>Check Before Removing</h3>
+                <p>
+                    Follow the recipe's suggested baking time and use a
+                    toothpick test when appropriate to check if your cake
+                    is ready.
+                </p>
+            </article>
+
+            <article class="tip-card">
+                <span class="tip-number">09</span>
+                <h3>Let Your Dessert Cool</h3>
+                <p>
+                    Allow cakes and brownies to cool as directed before
+                    cutting or decorating. This helps them keep their shape.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="tip-note">
+            <strong>A little reminder:</strong>
+            Every oven and recipe can be different, so always follow the
+            recipe instructions and keep an eye on your dessert while it bakes.
+        </div>
+
+        <a href="homePage.html" class="tips-back">BACK TO HOME</a>
+    </main>
+
+    <footer>
+        <h2>Sprinkly</h2>
+        <p>Making every moment a little sweeter!</p>
+
+        <div class="footer-links">
+            <a href="homePage.html">Home</a>
+            <a href="RecipesMenu.html">Recipes</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Sprinkly. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
