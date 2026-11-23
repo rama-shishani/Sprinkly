@@ -116,10 +116,6 @@ nav a {
     border-radius: 20px;
 }
 
-nav a:hover,
-nav a.active {
-    background: #f5d8d5;
-}
 
 /* Page Heading */
 
