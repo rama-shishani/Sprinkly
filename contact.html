@@ -215,37 +215,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
                 Fill out the form below and let us know what's on your mind.
             </p>
 
-            <form action="#" method="post">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name"
-                       placeholder="Enter your name" required>
+           <form action="mailto:sprinklydessert@gmail.com"
+      method="post"
+      enctype="text/plain">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email" required>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="Name"
+           placeholder="Enter your name" required>
 
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject"
-                       placeholder="What is your message about?" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="Email"
+           placeholder="Enter your email" required>
 
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message"
-                          placeholder="Write your message here..." required></textarea>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="Subject"
+           placeholder="What is your message about?" required>
 
-                <button type="submit" class="contact-submit">SEND MESSAGE →</button>
-            </form>
+    <label for="message">Your Message</label>
+    <textarea id="message" name="Message"
+              placeholder="Write your message here..." required></textarea>
+
+    <button type="submit" class="contact-submit">
+        SEND MESSAGE →
+    </button>
+</form>
         </section>
     </main>
 
-    <script>
-        const navLinks = document.querySelectorAll('#mainNav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                navLinks.forEach(item => item.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
+   
 
 
 
