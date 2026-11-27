@@ -22,7 +22,7 @@
         </div>
 
         <nav id="mainNav">
-            <a href="homePage.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="RecipesMenu.html" class="active">Recipes</a>
             <a href="AboutUs.html">About Us</a>
             <a href="contact.html">Contact</a>
@@ -156,16 +156,7 @@
 
     </main>
 
-    <script>
-        const navLinks = document.querySelectorAll('#mainNav a');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                navLinks.forEach(item => item.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    </script>
+    
 
 </body>
 </html>
